@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Venta de Productos</title>
+    <link rel="stylesheet" href="../css/styles.css">
+    <script src="../js/calculo.js"></script>
+</head>
+<body>
+    <div class="contenedor">
+        <h1>Venta de Productos</h1>
+        
+        
+        <div class="grupo">
+            <label for="costo">ingrese el Costo:</label>
+            <input type="number" id="costo" placeholder="Ingrese el costo" required>
+        </div>
+        
+        
+        <div class="grupo">
+            <label for="descuento">ingrese el Descuento:</label>
+            <input type="number" id="descuento" placeholder="Ingrese el descuento" required>
+        </div>
+        
+        
+        <div class="grupo">
+            <label for="iva">Incluir IVA:</label>
+            <input type="checkbox" id="iva">
+        </div>
+
+        
+        <div class="grupo">
+            <button onclick="cal.venta()">Calcular</button> 
+            <button id="limpiar" onclick="limpiar()">Limpiar</button>
+        </div>
+
+        
+        <textarea id="resp" rows="5" readonly></textarea>
+    </div>
+</body>
+</html>
